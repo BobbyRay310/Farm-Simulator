@@ -607,10 +607,10 @@ MonoBehaviour:
   m_LookAt: {fileID: 976504619}
   m_Follow: {fileID: 976504619}
   m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -633,8 +633,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627602572}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30095926, y: 1e-45, z: -0, w: 0.953637}
-  m_LocalPosition: {x: 0, y: 9.01, z: -10}
+  m_LocalRotation: {x: 0.3006394, y: 0.000000016410379, z: -0.0000000051729154, w: 0.9537379}
+  m_LocalPosition: {x: 0, y: 9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -806,11 +806,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 40
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -834,13 +834,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734326228}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.040544346, y: -0.32269728, z: 0.20570144, w: 0.9229895}
-  m_LocalPosition: {x: 7.071069, y: 17.150948, z: 8.92631}
+  m_LocalRotation: {x: 0.040234774, y: -0.32276624, z: 0.2055932, w: 0.9230031}
+  m_LocalPosition: {x: 7.071069, y: 17.142286, z: 8.931311}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1660553111}
-  m_LocalEulerAnglesHint: {x: -10.308, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.01, y: -36.307, z: 21.185}
 --- !u!114 &734326232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,7 +1220,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &976504621
 MonoBehaviour:
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 976504620}
   _speed: 5
-  _turnspeed: 360
+  _turnspeed: 1000
 --- !u!114 &976504622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 7.01, z: -10}
+  m_FollowOffset: {x: 0, y: 7, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
