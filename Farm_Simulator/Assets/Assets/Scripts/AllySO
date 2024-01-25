@@ -1,0 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+[CreateAssetMenu(fileName = "SO_info", menuName = "SO")]
+public class SO : ScriptableObject {
+ public string Name;
+ public int Health = 10;
+ public float speed = 5f;
+ public GameObject Model;
