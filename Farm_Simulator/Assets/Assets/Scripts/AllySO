@@ -13,7 +13,7 @@ public class SO : ScriptableObject, IDamageable {
 
 private void OnStart(
 
-    MaxHealth = CurrentHealth;
+    int MaxHealth = CurrentHealth;
     
 )
 
