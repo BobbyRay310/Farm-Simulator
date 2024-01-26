@@ -11,7 +11,8 @@ public class HostileAnimal : EnemySO, IDamageable {
         }
     }
     class Coyote: HostileAnimal{
-        public override void Attack(){
+        public override void Attack()
+        {
             /// <summary>
             /// This is going to be where I put the hostile/attack AI for each of the different animals 
             /// </summary>
