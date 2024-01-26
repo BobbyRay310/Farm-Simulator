@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1509147214}
   firePoint: {fileID: 1655805002}
-  fireForce: 50
+  fireForce: 20
 --- !u!1 &145399188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,6 +1699,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1777911435437297250, guid: f3095b66e4d9d2b40a9b1a984330cc43, type: 3}
   m_PrefabInstance: {fileID: 8169458833601588168}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1509147220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509147214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3329470e46a18448b563ccfd223c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1531433989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +1946,7 @@ Transform:
   m_GameObject: {fileID: 1655805001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17, y: 0.196, z: 1.81}
+  m_LocalPosition: {x: 0.17, y: 0.196, z: 1.591}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2234,11 +2246,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6175495034851800460, guid: f3095b66e4d9d2b40a9b1a984330cc43, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6373906945655653266, guid: f3095b66e4d9d2b40a9b1a984330cc43, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1777911435437297250, guid: f3095b66e4d9d2b40a9b1a984330cc43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1509147220}
   m_SourcePrefab: {fileID: 100100000, guid: f3095b66e4d9d2b40a9b1a984330cc43, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
