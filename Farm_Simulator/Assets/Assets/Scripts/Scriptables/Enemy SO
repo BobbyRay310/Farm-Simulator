@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+[CreateAssetMenu(fileName = "Enemy Info", menuName = "Enemy")]
+public class SO : ScriptableObject, IDamageable {
+ public string Name;
+ public int MaxHealth = 10;
+ private int CurrentHealth; 
+ public float speed = 5f;
+ public GameObject Model;
+
+ private void OnStart(
+   int MaxHealth = CurrentHealth;
+
+   public virtual void HostileMovement(){
+         Attack();
+   }
+ )
+  public void DamageTaken(int damageAmount) {
+   CurrentHealth -= damageAmount;
+}
+  
+public void Damage(float damageAmount){
+   DamageTaken(damageAmount);
+}
+
+}

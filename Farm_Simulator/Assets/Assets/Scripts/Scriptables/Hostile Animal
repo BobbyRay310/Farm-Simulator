@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HostileAnimal : EnemySO, IDamageable {
+
+ class Fox : HostileAnimal {
+        public override void Attack()
+        {
+
+        }
+    }
+    class Coyote: HostileAnimal{
+        public override void Attack(){
+            /// <summary>
+            /// This is going to be where I put the hostile/attack AI for each of the different animals 
+            /// </summary>
+        }
+
+    }
+    class Wolf: HostileAnimal{
+        public override void Attack(){
+
+        }
+    }
+    class Raccoon : HostileAnimal{
+        public override void Attack(){
+
+        }
+    }
+}

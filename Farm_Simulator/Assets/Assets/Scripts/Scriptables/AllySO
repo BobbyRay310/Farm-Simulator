@@ -5,11 +5,29 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Ally Info", menuName = "Ally")]
 public class AllySO : ScriptableObject, IDamageable {
- public string AllyName;
+ 
  public int MaxHealth = 10;
  private int CurrentHealth; 
  public float speed = 5f;
  public GameObject Model;
+
+
+
+ private void OnStart(
+
+   int MaxHealth = CurrentHealth;
+   public virtual void DocileMovement(
+      Wander();
+) 
+  
+)
+
+public void DamageTaken(int damageAmount) {
+   CurrentHealth -= damageAmount;
+}
+  
+public void Damage(float damageAmount){
+   DamageTaken(damageAmount);
 
 
 }
