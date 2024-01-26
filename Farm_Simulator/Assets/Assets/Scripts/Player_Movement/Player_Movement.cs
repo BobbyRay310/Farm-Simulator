@@ -7,12 +7,19 @@ public class Player_Movement : MonoBehaviour
 {
     Rigidbody rigidBody;
     public float speed = 4;
+    public Weapon weapon;
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>(); 
     }
 
-    // Update is called once per frame
+     void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            weapon.Fire();
+        }
+    }
     void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
