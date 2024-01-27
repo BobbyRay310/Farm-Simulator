@@ -11,6 +11,6 @@ public class Weapon: MonoBehaviour
   public void Fire()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        bullet.GetComponent<Rigidbody>().AddForce(firePoint.up * fireForce, ForceMode.Impulse);
+        bullet.GetComponent<Rigidbody>().AddForce(firePoint.forward * fireForce, ForceMode.Impulse);
     }
 }
