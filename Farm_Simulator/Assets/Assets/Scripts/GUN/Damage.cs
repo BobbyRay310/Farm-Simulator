@@ -1,64 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class Wall : MonoBehaviour
+public class Fence : MonoBehaviour
 {
     public int maxHealth = 100;
     private int currentHealth;
 
-    public GameObject healthBar;
-    private Slider healthSlider;
-
     private void Start()
     {
-        currentHealth = maxHealth;
-        GameObject healthBarObject = Instantiate(healthBar, transform.position + new Vector3(0, 2, 0), Quaternion.identity);
-        healthBarObject.transform.SetParent(transform);
-        healthSlider = healthBarObject.GetComponentInChildren<Slider>();
+        ResetFence();
 
-        UpdateHealthBar();
     }
-    public void TakeDamage(int damage)
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Animal"))
+        {
+            TakeDamage(10);
+        }
+    }
+
+    private void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        UpdateHealthBar();
+        if(currentHealth <= 0)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
-        if (currentHealth <= 0)
-        {
-            Destroy(healthSlider.gameObject);
-            Destroy(gameObject);
-        }
-    }
-    private void UpdateHealthBar()
+    public void ResetFence()
     {
-        if (healthSlider != null)
-        {
-            healthSlider.value = (float)currentHealth / maxHealth;
-            healthSlider.GetComponentInChildren<Text>().text = currentHealth.ToString();
-        }
+        currentHealth = maxHealth;
+        gameObject.SetActive(true);
     }
+
 
 }
 
-//public class HealthSystem
-//{
-//    private int health;
-//    private int healthMax;
-//    public HealthSystem(int healthMax)
-//    {
-//        this.healthMax = healthMax;
-//        health = healthMax;
-//    }
-//    public int GetHealth()
-//    {
-//        return health;
-//    }
-//    public void Damage(int damageAmount)
-//    {
-//        health -= damageAmount;
-//        if (health < 0) health = 0;
-//    }
-//}
