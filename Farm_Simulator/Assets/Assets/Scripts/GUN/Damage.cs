@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Wall : MonoBehaviour
 {
     public int maxHealth = 100;
@@ -25,7 +26,7 @@ public class Wall : MonoBehaviour
         currentHealth -= damage;
         UpdateHealthBar();
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Destroy(healthSlider.gameObject);
             Destroy(gameObject);
@@ -33,7 +34,7 @@ public class Wall : MonoBehaviour
     }
     private void UpdateHealthBar()
     {
-        if(healthSlider != null)
+        if (healthSlider != null)
         {
             healthSlider.value = (float)currentHealth / maxHealth;
             healthSlider.GetComponentInChildren<Text>().text = currentHealth.ToString();
