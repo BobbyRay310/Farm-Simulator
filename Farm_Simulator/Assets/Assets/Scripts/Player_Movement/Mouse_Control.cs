@@ -5,16 +5,11 @@ using UnityEngine;
 public class Mouse_Control : MonoBehaviour
 {
     Vector3 lookPos;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+  
     void Update()
     {
 
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); //This follows the Mouse's placement on Screen
 
         RaycastHit hit;
 

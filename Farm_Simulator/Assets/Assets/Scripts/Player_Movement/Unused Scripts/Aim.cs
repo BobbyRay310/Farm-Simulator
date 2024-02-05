@@ -11,10 +11,10 @@ public class Aim : MonoBehaviour
 
     void Start()
     {
-        mainCamera = Camera.main;
+        mainCamera = Camera.main; //This activates the camera
     }
 
-    private (bool success, Vector3 position) GetMousePosition()
+    private (bool success, Vector3 position) GetMousePosition() //This makes a Gameobject follow the mouse or the Player model moves
     {
         var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
@@ -31,7 +31,7 @@ public class Aim : MonoBehaviour
 
     private void aim()
     {
-        var (success, position) = GetMousePosition();
+        var (success, position) = GetMousePosition(); //This code is needed for the player to move otherwise it only goes up (for some reason)
         if (success)
         {
             var direction = position - transform.position;

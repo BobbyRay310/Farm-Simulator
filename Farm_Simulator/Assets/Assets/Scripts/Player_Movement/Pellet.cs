@@ -13,8 +13,9 @@ public class Pellet : MonoBehaviour
     }
     private void Update()
     {
-        float moveSpeed = 100f;
+        float moveSpeed = 20f;
         transform.position += shootDir * moveSpeed * Time.deltaTime;
 
     }
+
 }
