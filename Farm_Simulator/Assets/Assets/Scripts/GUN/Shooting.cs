@@ -4,7 +4,7 @@ using UnityEngine.Events;
 using UnityEngine;
 using Unity.PlasticSCM.Editor.WebApi;
 
-public class Shooting : MonoBehaviour
+public class Shooting : MonoBehaviour //We did not use this code, later on we'll remove this
 {
     public UnityEvent OnGunShoot;
     public float FireCooldown;

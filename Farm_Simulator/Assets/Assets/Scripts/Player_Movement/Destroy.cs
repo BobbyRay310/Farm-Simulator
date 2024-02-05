@@ -6,7 +6,7 @@ public class Destroy : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject); // This destroys a game object when it collides
+        Destroy(gameObject); // This destroys a game object when collision occurs
     }
 
 
