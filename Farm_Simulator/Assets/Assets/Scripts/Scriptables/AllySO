@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "Ally Info", menuName = "Ally")]
 public class AllySO : ScriptableObject, IDamageable {
  
  public int MaxHealth = 10;

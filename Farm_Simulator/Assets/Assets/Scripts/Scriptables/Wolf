@@ -1,0 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+ 
+[CreateAssetMenu(fileName = "Hostile Animal/Wolf")]
+public class Wolf : EnemySO, IDamageable
+        public override void Attack(){
+
+        }

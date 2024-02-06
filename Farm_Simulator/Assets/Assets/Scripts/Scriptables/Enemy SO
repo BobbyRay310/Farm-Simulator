@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-[CreateAssetMenu(fileName = "Enemy Info", menuName = "Enemy")]
-public class SO : ScriptableObject, IDamageable {
+public class EnemySO : ScriptableObject, IDamageable {
  public string Name;
  public int MaxHealth = 10;
  private int CurrentHealth; 
