@@ -26,6 +26,6 @@ public class Enemy_Spawner : MonoBehaviour
             GameObject enemyToSpawn = enemyPrefabs[rand];
         }
 
-        Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+        //Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
     }
 }

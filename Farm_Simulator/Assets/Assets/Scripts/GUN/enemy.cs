@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    
-    void Start()
+    public Transform target;
+    public float speed = 3f;
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+    private void Update() //Follows the Target
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate() //Moves towards the target
     {
         
+    }
+    private void GetTarget()
+    {
+
     }
 }
