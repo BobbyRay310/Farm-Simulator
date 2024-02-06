@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
         if(remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
+           // Application.LoadLevel(LevelToload);
         }
         else if (remainingTime < 0)
         {
