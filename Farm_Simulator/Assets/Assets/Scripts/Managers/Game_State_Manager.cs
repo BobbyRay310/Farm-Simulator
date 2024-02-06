@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 public class Game_State_Manager : MonoBehaviour
 {
 
-    public void PlayGame()
+public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 public void QuitGame()
