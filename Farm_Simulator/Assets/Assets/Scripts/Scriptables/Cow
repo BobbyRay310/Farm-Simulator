@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
  
  [CreateAssetMenu(fileName = "Docile Animal/Cow")]
-public class Cow : AllySO, IDamageable
+public class Cow : AllySO, IDamageable {
         public override void Wander(){
 
         }
+}

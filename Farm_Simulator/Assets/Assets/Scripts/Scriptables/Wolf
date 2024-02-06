@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
  
 [CreateAssetMenu(fileName = "Hostile Animal/Wolf")]
-public class Wolf : EnemySO, IDamageable
+public class Wolf : EnemySO, IDamageable {
+    public string targetTag;
+
         public override void Attack(AttackBrain Attack)
         {
-
+            GameObject target = GameObject.FindGameObjectWithTag(targetTag);
         }
+}
