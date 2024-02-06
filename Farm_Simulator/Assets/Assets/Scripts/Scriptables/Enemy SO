@@ -12,8 +12,8 @@ public class EnemySO : ScriptableObject, IDamageable {
  private void OnStart(
    int MaxHealth = CurrentHealth;
 
-   public virtual void HostileMovement(){
-         Attack();
+   public virtual void Attack(AttackBrain Attack){
+         
    }
  )
   public void DamageTaken(int damageAmount) {

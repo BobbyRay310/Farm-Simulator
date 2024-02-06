@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AttackBrain : using UnityEngine;
+
+public class AttackBrain : MonoBehaviour {
+
+    public Brain brain;
+
+    void Update()
+     {
+        brain.Attack(this);
+    }
+}

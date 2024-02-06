@@ -4,6 +4,7 @@ using UnityEngine;
  
 [CreateAssetMenu(fileName = "Hostile Animal/Wolf")]
 public class Wolf : EnemySO, IDamageable
-        public override void Attack(){
+        public override void Attack(AttackBrain Attack)
+        {
 
         }
