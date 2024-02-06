@@ -7,16 +7,15 @@ public class AllySO : ScriptableObject, IDamageable {
  
  public int MaxHealth = 10;
  private int CurrentHealth; 
- public float speed = 5f;
- public GameObject Model;
 
 
 
  private void OnStart(
 
    int MaxHealth = CurrentHealth;
-   public virtual void DocileMovement(
-      Wander();
+
+   public virtual void Wander(WanderBrain Wander) (
+    
 ) 
   
 )

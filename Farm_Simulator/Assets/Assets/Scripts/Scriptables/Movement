@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+/// <summary>
+/// This is a component that needs to be added to Hostile and Docile Enemy prefabs so that when they are given actual AI behaviors they can move around
+/// </summary> <summary>
+/// 
+/// </summary>
+public class Movement : using UnityEngine;
+
+public class Movement : MonoBehaviour {
+    public Rigidbody3D rb;
+    public float speed; 
+
+    public void MoveTowardsTarget(Vector3 targetPosition) 
+    {
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+    }
+}

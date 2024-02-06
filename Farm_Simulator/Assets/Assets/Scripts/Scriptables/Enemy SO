@@ -6,8 +6,6 @@ public class EnemySO : ScriptableObject, IDamageable {
  public string Name;
  public int MaxHealth = 10;
  private int CurrentHealth; 
- public float speed = 5f;
- public GameObject Model;
 
  private void OnStart(
    int MaxHealth = CurrentHealth;
