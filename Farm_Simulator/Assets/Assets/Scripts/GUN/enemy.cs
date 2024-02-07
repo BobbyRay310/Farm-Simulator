@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class enemy : MonoBehaviour
 {
+    [SerializeField] float health, maxHealth = 3f;
+
     public GameObject player;
     public float speed;
 
@@ -30,17 +32,29 @@ public class enemy : MonoBehaviour
         {
             _dir = target.position - GetComponent<Rigidbody>().position;
             _dir.Normalize();
-           // Debug.Log(_dir);
+            // Debug.Log(_dir);
         }
 
         transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime); //Changes it's position towards The Player
-      
-         
+
+
     }
     void FixedUpdate()
     {
         GetComponent<Rigidbody>().AddForce(_dir * speed);
         transform.rotation = Quaternion.Euler(0, 90, 0);
+
+
     }
 
+    public void TakeDamage(float damageAmount)
+    {
+        health -= damageAmount;
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }
