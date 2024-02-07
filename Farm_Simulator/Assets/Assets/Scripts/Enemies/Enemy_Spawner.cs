@@ -1,31 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy_Spawner : MonoBehaviour
 {
-    [SerializeField] private float spawnRate = 1f;
+    [SerializeField] 
+    private GameObject enemyPrefab;
 
-    [SerializeField] private GameObject[] enemyPrefabs;
+    [SerializeField]
+    private float enemyInterval = 3.5f;
 
-    [SerializeField] private bool canSpawn = true;
 
-    private void Start()
+    void Start()
     {
-        StartCoroutine(Spawner());
+        StartCoroutine(spawnEnemy(enemyInterval, enemyPrefab));
+
     }
 
-    private IEnumerator Spawner()
+    private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
-        WaitForSeconds wait = new WaitForSeconds(spawnRate);
-
-        while (canSpawn)
-        {
-            yield return wait;
-            int rand = Random.Range(0, enemyPrefabs.Length);
-            GameObject enemyToSpawn = enemyPrefabs[rand];
-        }
-
-        //Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(interval);
+        GameObject newEnemy = Instantiate(enemy);
+        StartCoroutine(spawnEnemy(interval, enemy));
     }
+   
 }
