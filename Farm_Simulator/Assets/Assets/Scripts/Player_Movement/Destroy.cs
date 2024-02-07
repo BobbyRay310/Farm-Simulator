@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
+  
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.TryGetComponent<enemy>(out enemy enemyComponent))

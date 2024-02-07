@@ -14,15 +14,15 @@ public class Enemy_Spawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(spawnEnemy(enemyInterval, enemyPrefab));
+        StartCoroutine(spawn(enemyInterval, enemyPrefab));
 
     }
 
-    private IEnumerator spawnEnemy(float interval, GameObject enemy)
+    private IEnumerator spawn(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy);
-        StartCoroutine(spawnEnemy(interval, enemy));
+       GameObject newEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
+        StartCoroutine(spawn(interval, enemy));
     }
    
 }
