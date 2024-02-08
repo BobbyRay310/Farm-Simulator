@@ -37,4 +37,11 @@ public class Health : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        TakeDamage(currentHealth);
+      
+    }
+
+
 }
