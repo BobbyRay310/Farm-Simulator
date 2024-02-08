@@ -2,13 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
 
-    // Update is called once per frame
+   // [SerializeField] float duration, currentTime;
+
+    //[SerializeField] GameObject panel;
+
+  //  [SerializeField] Image timeImage;
+  /*   void Start()
+    {
+        panel.SetActive(false);
+        currentTime = duration;
+        timerText.text = currentTime.ToString();
+        StartCoroutine(TimeIEn());
+    }
+
+    IEnumerator TimeIEn()
+    {
+        while(currentTime >-0)
+        {
+            timeImage.fillAmount = Mathf.InverseLerp(0, duration, currentTime);
+            timerText.text = currentTime.ToString();
+            yield return new WaitForSeconds(1f);
+            currentTime--;
+
+        }
+        OpenPanel();
+    }
+
+    void OpenPanel()
+    {
+        timerText.text = "";
+        panel.SetActive(true);
+
+    }
+
+    */
     void Update()
     {
         if(remainingTime > 0)
