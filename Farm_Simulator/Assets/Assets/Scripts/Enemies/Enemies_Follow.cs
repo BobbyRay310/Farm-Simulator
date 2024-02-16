@@ -6,10 +6,18 @@ public class Enemies_Follow : MonoBehaviour
 {
 
     public Transform targetObj;
-    void Update()
-    {
+  
+    public void Follow()
+     {
 
         transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 10 * Time.deltaTime);
 
     }
 }
+
+/*void Update()
+ {
+
+     transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 10 * Time.deltaTime);
+
+ }*/

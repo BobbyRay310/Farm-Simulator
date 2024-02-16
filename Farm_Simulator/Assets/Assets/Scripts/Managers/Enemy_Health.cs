@@ -21,5 +21,14 @@ public class EnemyHealth : MonoBehaviour
         }
 
     }
+    public void EnemyDamage(float damageAmount)
+    {
+        health -= damageAmount;
 
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }

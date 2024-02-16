@@ -9,7 +9,6 @@ public class ChaseState : State
     public Transform targetObj;
     public AttackState attackState;
     public bool isInAttackRange;
-    
     public override State RunCurrentState()
     {
         if (isInAttackRange)
