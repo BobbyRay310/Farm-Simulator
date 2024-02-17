@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
 public class enemy : MonoBehaviour
@@ -44,6 +45,12 @@ public class enemy : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(_dir * speed);
         transform.rotation = Quaternion.Euler(0, 90, 0);
 
+        if(target)
+        {
+            Vector3 direction = target.position - transform.position;
+            float angle = Mathf.Atan(direction.x) * Mathf.Rad2Deg;
+         //   MoveDirection = direction * angle;
+        }
 
     }
 

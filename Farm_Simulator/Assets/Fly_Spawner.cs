@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class FarmerEnemy_Spawner : MonoBehaviour
+public class Enemy_Spawner : MonoBehaviour
 {
     [SerializeField] 
     private GameObject enemyPrefab;

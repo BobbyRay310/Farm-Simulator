@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    public void TakeDamage(float damageAmount)
+    public void EnemyDamage(float damageAmount)
     {
         health -= damageAmount;
 
@@ -21,7 +21,8 @@ public class EnemyHealth : MonoBehaviour
         }
 
     }
-    public void EnemyDamage(float damageAmount)
+
+    public void TakeDamag(float damageAmount)
     {
         health -= damageAmount;
 
