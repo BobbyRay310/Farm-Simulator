@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Fly_Spawner : MonoBehaviour
+public class FlyEnemy_Spawner : MonoBehaviour
 {
     [SerializeField] 
     private GameObject enemyPrefab;
