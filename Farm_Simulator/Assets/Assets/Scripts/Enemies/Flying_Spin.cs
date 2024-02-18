@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Flying_Spin : MonoBehaviour
@@ -9,15 +10,15 @@ public class Flying_Spin : MonoBehaviour
 
     public float speed = 1.5f;
     public float turnRate;
-    Vector3 toTarget;
    
    private void Update()
     {
-        transform.position = Vector3.MoveTowards(this.transform.position, toTarget, 10 * Time.deltaTime);
-        // Vector3 toTarget = player.transform.position - transform.position;
+     //   Vector3 toTarget = this.transform.position, target;
+        Vector3 toTarget = player.transform.position - transform.position;
         float angleToTarget = Vector3.Angle(transform.forward, toTarget);
+        //direction.Normalize(Direction dir);
 
-        transform.RotateAround(transform.position, Time.deltaTime * turnRate * angleToTarget);
+        //transform.RotateAround(this.transform.position, Time.deltaTime * turnRate * angleToTarget);
         transform.Translate(toTarget * speed * Time.deltaTime);
     }
 }
