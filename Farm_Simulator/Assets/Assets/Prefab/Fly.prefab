@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 5870165074192746107}
   m_Layer: 0
   m_Name: Fly
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 3
-  player: {fileID: 1505470140196690996, guid: dae1fcd77d81d394fb13887af6bd0768, type: 3}
+  player: {fileID: 0}
   speed: 0
   turnSpeed: 5
   _dir: {x: 0, y: 0, z: 0}
