@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Assets/Scenes/Start_Menu.unity
     guid: 13b8c950e261c384f81e1e3d52a025f4
   - enabled: 1
-    path: Assets/Assets/Scenes/First_Level.unity
-    guid: 69da461b79ea5c14ebd2d5652635e969
+    path: Assets/Assets/Scenes/First_Level Enemy Test.unity
+    guid: 95897e512efa52a458351191c6af02f3
   m_configObjects: {}

@@ -18,7 +18,7 @@ public class Flying_Spin : MonoBehaviour
         float angleToTarget = Vector3.Angle(transform.forward, toTarget);
         //direction.Normalize(Direction dir);
 
-        //transform.RotateAround(this.transform.position, Time.deltaTime * turnRate * angleToTarget);
+        transform.RotateAround(this.transform.position, Time.deltaTime * turnRate * angleToTarget);
         transform.Translate(toTarget * speed * Time.deltaTime);
     }
 }
