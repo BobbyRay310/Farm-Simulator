@@ -2757,6 +2757,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 362708795}
+  - component: {fileID: 362708797}
+  - component: {fileID: 362708796}
   m_Layer: 0
   m_Name: Target
   m_TagString: Player
@@ -2779,6 +2781,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2021205640}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &362708796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362708794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ed86547abcb2f4d9ea981e486a7d44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 2
+  player_2: {fileID: 0}
+--- !u!143 &362708797
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362708794}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &369601498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20099,7 +20141,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 4
@@ -20210,22 +20252,22 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 80ed86547abcb2f4d9ea981e486a7d44, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 2021205644}
+        m_TargetAssemblyTypeName: Player_Two, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: OnMove()
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: b636659b-a6f0-4bc0-b7b0-261596ba1add
-    m_ActionName: Player_2/Movement
+    m_ActionId: 5ba30623-b325-4fa4-a25f-eabb8d0b9db8
+    m_ActionName: Player/Movement[/Keyboard/i,/Keyboard/k,/Keyboard/j,/Keyboard/l]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard1
+  m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -20267,9 +20309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ed86547abcb2f4d9ea981e486a7d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 2
-  jumpHeight: 1
-  gravityValue: -9.81
+  playerSpeed: 10
+  player_2: {fileID: 2021205634}
 --- !u!1 &2022389193
 GameObject:
   m_ObjectHideFlags: 0

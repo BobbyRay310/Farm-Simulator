@@ -8,7 +8,7 @@
                 {
                     "name": "Movement",
                     "type": "PassThrough",
-                    "id": "b636659b-a6f0-4bc0-b7b0-261596ba1add",
+                    "id": "5ba30623-b325-4fa4-a25f-eabb8d0b9db8",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -18,7 +18,7 @@
             "bindings": [
                 {
                     "name": "IJKL",
-                    "id": "d0e98107-6e74-479d-bcd2-bb983539a4f7",
+                    "id": "07cbb69f-d5fd-4f1d-99e7-baa28954be6a",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -29,44 +29,99 @@
                 },
                 {
                     "name": "up",
-                    "id": "8dca1b57-9de0-4bf5-aeb6-459ec27693d9",
+                    "id": "6023c775-e281-4624-83cc-1fd2745a1605",
                     "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyBoard;Keyboard",
+                    "groups": "Second_Player_Control",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "408d90fd-2a58-4c6e-a810-a12b96987a79",
+                    "id": "2c46aa21-1da9-4327-bd84-c3df186f931c",
                     "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyBoard;Keyboard",
+                    "groups": "Second_Player_Control",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "51367dfe-5223-42c5-bca9-cc04572a61d8",
+                    "id": "4d6eb210-01b9-4d7c-a7b7-365896325f0f",
                     "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyBoard;Keyboard",
+                    "groups": "Second_Player_Control",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "b08123bd-68b4-4829-be5d-9fadd69f2a70",
-                    "path": "<Keyboard>/r",
+                    "id": "55e491b1-41d9-4e9f-98b8-413cbfa2f417",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyBoard;Keyboard",
+                    "groups": "Second_Player_Control",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "IJKL",
+                    "id": "a6d88141-81f1-499d-a2f2-3da73a099299",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "69ff1bb1-a85f-439a-aa61-c9d424cde467",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "7b9d2ef1-f787-46c0-8db5-31c12aed2ddf",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "cb1b1033-60d9-4e7e-babc-e5a8dd688868",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "ce2d3770-30b9-49be-a903-6032553df049",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -76,8 +131,8 @@
     ],
     "controlSchemes": [
         {
-            "name": "KeyBoard",
-            "bindingGroup": "KeyBoard",
+            "name": "Second_Player_Control",
+            "bindingGroup": "Second_Player_Control",
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
@@ -87,8 +142,8 @@
             ]
         },
         {
-            "name": "Keyboard1",
-            "bindingGroup": "Keyboard1",
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
