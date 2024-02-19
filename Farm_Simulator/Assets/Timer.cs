@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -45,17 +46,17 @@ public class Timer : MonoBehaviour
     */
     void Update()
     {
-        if(remainingTime > 0)
+        if (remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
-           // Application.LoadLevel(LevelToload);
+            // Application.LoadLevel(LevelToload);
         }
-        else if (remainingTime < 0)
+        if (remainingTime <= 0)
         {
             remainingTime = 0;
-            //You can call GameOver() here
-            timerText.color = Color.red;
+            SceneManager.LoadScene("Start_Menu");
         }
+
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
