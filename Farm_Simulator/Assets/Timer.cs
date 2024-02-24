@@ -54,7 +54,7 @@ public class Timer : MonoBehaviour
         if (remainingTime <= 0)
         {
             remainingTime = 0;
-            SceneManager.LoadScene("Start_Menu");
+            SceneManager.LoadScene("Win_Screen#1");
         }
 
         int minutes = Mathf.FloorToInt(remainingTime / 60);
