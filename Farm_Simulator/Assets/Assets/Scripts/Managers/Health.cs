@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
 
     }
 
-    void TakeDamage(int amount)
+    void TakeDamage(int amount) //This decreases the player's current health
     {
         currentHealth -= amount;
 
@@ -24,7 +24,7 @@ public class Health : MonoBehaviour
        } */
     }
 
-    void Heal(int amount)
+    void Heal(int amount) //This grants the player the ability to heal
     {
         currentHealth += amount;
         {
@@ -37,10 +37,14 @@ public class Health : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) //If the player collides with enemy players they take damage
     {
-        TakeDamage(currentHealth);
-      
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            TakeDamage(currentHealth);
+
+        }
+
     }
 
 

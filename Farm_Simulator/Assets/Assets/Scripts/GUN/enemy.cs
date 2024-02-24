@@ -40,7 +40,7 @@ public class enemy : MonoBehaviour
 
 
     }
-    void FixedUpdate()
+    void FixedUpdate() //This has the enemy player transform its position
     {
         GetComponent<Rigidbody>().AddForce(_dir * speed);
         transform.rotation = Quaternion.Euler(0, 90, 0);
@@ -54,7 +54,7 @@ public class enemy : MonoBehaviour
 
     }
 
-    public void TakeDamage(float damageAmount)
+    public void TakeDamage(float damageAmount) //If the enemy health is at or below 0, the game object is destroyed
     {
         health -= damageAmount;
 

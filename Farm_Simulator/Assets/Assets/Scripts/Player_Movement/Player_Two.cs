@@ -20,17 +20,17 @@ public class Player_Two : MonoBehaviour
     private Vector3 movementInput = Vector2.zero;
     private bool jumped = false;
 
-    private void Start()
+    private void Start() //This gets the Unity Input system
     {
         controller = gameObject.GetComponent<CharacterController>();
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    public void OnMove(InputAction.CallbackContext context) //This method reads the 2nd player inputs based from "IJKL" keys
     {
         movementInput = context.ReadValue<Vector2>();
     }
 
-    void Update()
+    void Update() //This adjusts the players rotation, speed, and gravity.
     {
       /*  groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
@@ -38,7 +38,7 @@ public class Player_Two : MonoBehaviour
             playerVelocity.y = 0f;
         }
       */
-        Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
+        Vector3 move = new Vector3(movementInput.x, 0, movementInput.y); //This changes the position to either go up, down, left, or right
         controller.Move(move * Time.deltaTime * playerSpeed);
 
         if (move != Vector3.zero)
@@ -46,8 +46,7 @@ public class Player_Two : MonoBehaviour
             gameObject.transform.forward = move;
         }
 
-        // Changes the height position of the player..
-        if (jumped && groundedPlayer)
+        if (jumped && groundedPlayer) //This normally is used for platformers for jumping, however this is needed so that the player is able to move otherwise it will stay in place and only change rotations.
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
