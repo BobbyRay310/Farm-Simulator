@@ -700,8 +700,9 @@ GameObject:
   - component: {fileID: 5032889429360425360}
   - component: {fileID: 2283630224396219871}
   - component: {fileID: 430020885368311968}
-  - component: {fileID: 1254868593332943401}
   - component: {fileID: 8198078231872669631}
+  - component: {fileID: 8829935187300449493}
+  - component: {fileID: 4944396843750164466}
   m_Layer: 0
   m_Name: Enemy_Farmer
   m_TagString: Enemy
@@ -866,20 +867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObj: {fileID: 0}
---- !u!114 &1254868593332943401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8154669633236704258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85705ff1bd5abd34da3079777fe9fcc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 3
 --- !u!114 &8198078231872669631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +886,32 @@ MonoBehaviour:
   turnSpeed: 5
   _dir: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
+--- !u!114 &8829935187300449493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8154669633236704258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a6408934b338c4390bc1849646dfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4944396843750164466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8154669633236704258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3455c6422b112ab4e9bc05ca734274d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  damage: 1
 --- !u!1 &8434100819253513979
 GameObject:
   m_ObjectHideFlags: 0

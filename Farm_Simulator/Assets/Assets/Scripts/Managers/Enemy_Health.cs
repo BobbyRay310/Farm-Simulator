@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
 
     }
 
-    public void TakeDamag(float damageAmount)
+    public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
 
