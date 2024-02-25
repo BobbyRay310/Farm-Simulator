@@ -6,6 +6,8 @@ public class Health : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth;
+    // public GameManagerScript GameOver;
+    // public bool isDead; 
 
     void Start()
     {
@@ -47,5 +49,12 @@ public class Health : MonoBehaviour
 
     }
 
-
+    // void Update()
+    // {
+    //    if (currentHealth <= 0 && isDead)
+    //    {
+    //        isDead = true;
+    //        GameOver.gameOver();
+    //    }
+    // }
 }
