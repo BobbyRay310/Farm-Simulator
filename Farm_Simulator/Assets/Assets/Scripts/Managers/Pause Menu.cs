@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     public KeyCode pauseKey;
 
     public bool isPaused;
+
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -39,7 +40,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
-
     }
     public void ResumeGame() //This enables the game to presume back to normal
     {
