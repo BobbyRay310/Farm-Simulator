@@ -17,6 +17,8 @@ public class Heart : MonoBehaviour
     public GameObject prefab;
     public Player_Movement playermovent;
     public Timer time;
+    public GameOver gameOver;
+    private bool isDead;
     void Update()
     {
         if (health > numberOfHearts)
@@ -49,11 +51,14 @@ public class Heart : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health -= amount; 
-        if (health < 0)
+        if (health <= 0 && !isDead)
         {
             prefab.SetActive(false);
             playermovent.enabled = false;
             time.enabled = false;
+            isDead = true;
+            gameOver.gameOver();
+            //gameOver.enabled = true;
 
         }
     }
