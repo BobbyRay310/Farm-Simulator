@@ -14,6 +14,9 @@ public class Heart : MonoBehaviour
     public Sprite fullHearts;
     public Sprite emptyHeart;
 
+    public GameObject prefab;
+    public Player_Movement playermovent;
+    public Timer time;
     void Update()
     {
         if (health > numberOfHearts)
@@ -48,7 +51,10 @@ public class Heart : MonoBehaviour
         health -= amount; 
         if (health < 0)
         {
-            Destroy(gameObject);
+            prefab.SetActive(false);
+            playermovent.enabled = false;
+            time.enabled = false;
+
         }
     }
 
