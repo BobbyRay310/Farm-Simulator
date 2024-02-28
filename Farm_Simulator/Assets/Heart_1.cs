@@ -15,6 +15,7 @@ public class Heart_1 : MonoBehaviour
     public Sprite emptyHeart;
 
     public GameObject prefab;
+    public GameObject prefab_2;
     public Player_Movement playermovent;
     public Timer_2 time;
     public GameOver gameOver;

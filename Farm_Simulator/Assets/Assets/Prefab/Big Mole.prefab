@@ -855,8 +855,9 @@ GameObject:
   - component: {fileID: 2410142726286473241}
   - component: {fileID: 158914380752718381}
   - component: {fileID: 4274009735294286198}
-  - component: {fileID: 21001482536896634}
   - component: {fileID: 837206606667190197}
+  - component: {fileID: 2210733826920713178}
+  - component: {fileID: 1103750006870948014}
   m_Layer: 0
   m_Name: Big Mole
   m_TagString: Enemy
@@ -872,7 +873,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6669832027146034314}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000030556464, y: 0.7071068, z: 0.70710677, w: 0.00000030556464}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 8.38, y: 2.384, z: 0}
   m_LocalScale: {x: 1.6501629, y: 1.6501629, z: 1.6501629}
   m_ConstrainProportionsScale: 0
@@ -1014,20 +1015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a6408934b338c4390bc1849646dfbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &21001482536896634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6669832027146034314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3455c6422b112ab4e9bc05ca734274d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 0}
-  damage: 2
 --- !u!114 &837206606667190197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,6 +1029,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.85
   lineOfSite: 12.02
+--- !u!114 &2210733826920713178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6669832027146034314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85705ff1bd5abd34da3079777fe9fcc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 3
+--- !u!114 &1103750006870948014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6669832027146034314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3455c6422b112ab4e9bc05ca734274d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  damage: 2
 --- !u!1 &6781186448972866872
 GameObject:
   m_ObjectHideFlags: 0
