@@ -16,7 +16,7 @@ public class Heart : MonoBehaviour
 
     public GameObject prefab;
     public Player_Movement playermovent;
-    public Timer_2 time;
+    public Timer time;
     public GameOver gameOver;
     private bool isDead;
     void Update()

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 7af8cb5c57520404c812e4973490b916
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fullHearts: {fileID: 21300000, guid: df7e3e66a4b8f8043a33515e588dbcfc, type: 3}
+  - emptyHeart: {fileID: 21300000, guid: a9f621b02707e8241ac69f71d8efee3a, type: 3}
+  - prefab: {fileID: 598359907700599822, guid: 4bbaebdf347860f40b2f48e1e52e105d, type: 3}
+  - playermovent: {instanceID: 0}
+  - time: {instanceID: 0}
+  - gameOver: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
