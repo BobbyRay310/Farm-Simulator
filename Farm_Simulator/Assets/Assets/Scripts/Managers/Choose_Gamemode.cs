@@ -17,10 +17,10 @@ public class Choose_Gamemode : MonoBehaviour
 
     public void Moyai()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(8);
     }
 
-    private void BeginningMenu()
+    public void BeginningMenu()
     {
         SceneManager.LoadScene(0);
     }
