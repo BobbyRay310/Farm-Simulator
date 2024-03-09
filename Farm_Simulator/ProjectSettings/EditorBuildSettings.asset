@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Assets/Scenes/2nd_Level (Solo).unity
     guid: 6d5a91e91cbc52d438c9747a3c60efc8
   - enabled: 1
+    path: Assets/Assets/Scenes/YOU_WIN (Solo).unity
+    guid: 4996e96d6f17c7a4c96480fd6e313ba1
+  - enabled: 1
     path: Assets/Assets/Scenes/1st_Level (Moyai).unity
     guid: 727670d992b680a40a2f02813a363316
   m_configObjects:
