@@ -12,10 +12,10 @@ public class LAZER_SHOOTER : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.O))
         {
-            var lazer = Instantiate(lazerPrefab, lazerSpawnPoint.position, lazerSpawnPoint.rotation);
-            lazer.GetComponent<Rigidbody>().velocity = lazerSpawnPoint.forward * lazerSpeed;
+            GameObject bullet = Instantiate(lazerPrefab, lazerSpawnPoint.position, lazerSpawnPoint.rotation);
+            bullet.GetComponent<Rigidbody>().AddForce(lazerSpawnPoint.forward * lazerSpeed, ForceMode.Impulse);
         }
-        
+
     }
 
 

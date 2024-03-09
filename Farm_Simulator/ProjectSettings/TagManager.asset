@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Tractor
+  - Floor
   layers:
   - Default
   - TransparentFX

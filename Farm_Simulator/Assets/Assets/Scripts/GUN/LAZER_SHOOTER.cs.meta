@@ -3,7 +3,9 @@ guid: ed510e401cbc9a74d868be03d1f78b8e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - lazerSpawnPoint: {instanceID: 0}
+  - lazerPrefab: {fileID: 2744813932389693152, guid: 62386ce065c31c447baa9091ef05d1f1, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
