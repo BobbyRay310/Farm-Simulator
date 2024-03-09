@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Tractor
   - Floor
+  - LazerDestroy
   layers:
   - Default
   - TransparentFX

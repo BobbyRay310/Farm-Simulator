@@ -122,10 +122,10 @@ GameObject:
   - component: {fileID: 6175495034851800460}
   - component: {fileID: 5040644032884866027}
   - component: {fileID: -4436550419072718253}
-  - component: {fileID: 621084071332064614}
+  - component: {fileID: 1896109418148948559}
   m_Layer: 0
   m_Name: Lazer
-  m_TagString: Untagged
+  m_TagString: LazerDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   life: 3
   health: {fileID: 0}
   damage: 1
---- !u!114 &621084071332064614
+--- !u!114 &1896109418148948559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,6 +280,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1777911435437297250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 740c177209610454d8f858ea517823a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 4201aeb68d610ac469c6eed7e3747aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

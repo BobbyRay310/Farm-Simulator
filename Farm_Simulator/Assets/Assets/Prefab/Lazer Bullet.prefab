@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3619084378462479520}
   - component: {fileID: 4602228231308392676}
   - component: {fileID: 2935925990958378609}
-  - component: {fileID: 9064102915173220566}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -29,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.33491, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2802891698187421656}
@@ -84,29 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &9064102915173220566
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124738164632571817}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &2744813932389693152
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,9 +96,11 @@ GameObject:
   - component: {fileID: 2415549111309514353}
   - component: {fileID: 4318505518988550132}
   - component: {fileID: 4440026835826506454}
+  - component: {fileID: 5958817688839816987}
+  - component: {fileID: 8968845592122255415}
   m_Layer: 0
   m_Name: Lazer Bullet
-  m_TagString: Untagged
+  m_TagString: LazerDestroy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +115,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.09229599, y: 0.7010574, z: 0.7010574, w: 0.09229599}
   m_LocalPosition: {x: -5.8217545, y: -5.461305, z: -8.357604}
-  m_LocalScale: {x: 0.9825201, y: 0.82400596, z: 0.70619226}
+  m_LocalScale: {x: 1.4904621, y: 1.143531, z: 1.5242914}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3619084378462479520}
@@ -208,3 +186,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5958817688839816987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2744813932389693152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a652fab2a0d8b41988b834dd2b8ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &8968845592122255415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2744813932389693152}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

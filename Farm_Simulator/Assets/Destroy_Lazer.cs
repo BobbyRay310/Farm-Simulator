@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Destroy_Lazer : MonoBehaviour
 {
-    private void Awake()
+  /*  private void Awake()
     {
         StartCoroutine(waiter());
     }
@@ -15,14 +15,14 @@ public class Destroy_Lazer : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         Object.Destroy(this.gameObject);
-    }
-   /* private void OnTriggerEnter(Collider collision)
+    }*/
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "LazerDestroy")
         {
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
 
-    }*/
+    }
 
 }
