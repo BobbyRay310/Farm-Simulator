@@ -20,9 +20,14 @@ public class Player_Two : MonoBehaviour
     private Vector3 movementInput = Vector2.zero;
     private bool jumped = false;
 
+    [SerializeField] private AudioSource movingSFX;
+
+
     private void Start() //This gets the Unity Input system
     {
         controller = gameObject.GetComponent<CharacterController>();
+        movingSFX.Play();
+
     }
 
     public void OnMove(InputAction.CallbackContext context) //This method reads the 2nd player inputs based from "IJKL" keys

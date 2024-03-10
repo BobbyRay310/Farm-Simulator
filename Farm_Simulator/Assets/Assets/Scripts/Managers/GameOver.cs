@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+
+    [SerializeField] private AudioSource deadSFX;
+
     public GameObject gameOverUI;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,8 @@ public class GameOver : MonoBehaviour
     public void gameOver()
     {
         gameOverUI.SetActive(true);
+        deadSFX.Play();
+
     }
     public void restartButton()
     {

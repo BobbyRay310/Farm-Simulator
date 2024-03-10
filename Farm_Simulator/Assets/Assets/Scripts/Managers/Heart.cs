@@ -19,6 +19,9 @@ public class Heart : MonoBehaviour
     public Timer time;
     public GameOver gameOver;
     private bool isDead;
+
+
+
     void Update()
     {
         if (health > numberOfHearts)
@@ -59,7 +62,6 @@ public class Heart : MonoBehaviour
             isDead = true;
             gameOver.gameOver();
             //gameOver.enabled = true;
-
         }
     }
 

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-  
+    [SerializeField] private AudioSource shootingSFX;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.TryGetComponent<enemy>(out enemy enemyComponent))
@@ -13,6 +14,8 @@ public class Destroy : MonoBehaviour
         }
 
         Destroy(gameObject); // This destroys a game object when collision occurs
+
+        shootingSFX.Play();
 
     }
 
