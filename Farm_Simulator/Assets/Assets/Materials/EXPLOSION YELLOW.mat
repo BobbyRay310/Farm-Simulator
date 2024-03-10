@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: EXPLOSION YELLOW
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: 4892efc22f99ba344addcb60b726a0a4, type: 2}
+  m_Parent: {fileID: 2100000, guid: a97015aeb5e40894a8ef9abbe450ad44, type: 2}
   m_ModifiedSerializedProperties: 22
   m_ValidKeywords:
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
