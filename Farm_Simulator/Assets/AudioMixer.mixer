@@ -49,6 +49,39 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-5128848008494379424
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 0d73d58fa7fd809409dea55785e70fbe
+  m_EffectName: Attenuation
+  m_MixLevel: ad46dde1591b6fd4189741452b0191d0
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-3861012016561440362
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Death Sound
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: bfc1d7a225880bb45b6a0d542650453b
+  m_Children: []
+  m_Volume: 20cd655c9d7d6214aaed0204b8ef26e1
+  m_Pitch: ecca52ea99650e147b8fa9a28000fde2
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -5128848008494379424}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-2609266201805500518
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -103,6 +136,7 @@ AudioMixerController:
     - b4296cd6de2cd70488dcaeb1c5333d1f
     - 6b54e757b6e0a8f439978f9965ec907a
     - a6488341d13c4954aa992fabc461618b
+    - bfc1d7a225880bb45b6a0d542650453b
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -118,6 +152,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 7437053012121908353}
   - {fileID: 6529045035409094263}
+  - {fileID: -3861012016561440362}
   - {fileID: -5501612074027174655}
   m_Volume: 57db8b4533311844eace5479f5b30bf2
   m_Pitch: 0118ad98dbb9856499cc31173d97b8b8

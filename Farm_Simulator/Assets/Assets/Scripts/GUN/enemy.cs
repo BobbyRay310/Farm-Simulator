@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,6 +18,9 @@ public class enemy : MonoBehaviour
 
     public Vector3 _dir;
     public Transform target;
+
+    [SerializeField]
+     private ParticleSystem deathParticles;
 
     void Start()
     {
@@ -37,7 +41,6 @@ public class enemy : MonoBehaviour
         }
 
         transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime); //Changes it's position towards The Player
-
 
     }
     void FixedUpdate() //This has the enemy player transform its position
@@ -60,8 +63,25 @@ public class enemy : MonoBehaviour
 
         if (health <= 0)
         {
+           //Instantiate(deathParticles, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Bullet"))
+        {
+            Destroy();
+        }
+    }
+
+    public void Destroy()
+    {
+        Instantiate(deathParticles, transform.position, Quaternion.identity);
+
+        Destroy(gameObject);
+    }
+    
 }

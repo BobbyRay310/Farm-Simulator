@@ -8,6 +8,7 @@ TagManager:
   - Tractor
   - Floor
   - LazerDestroy
+  - Bullet
   layers:
   - Default
   - TransparentFX

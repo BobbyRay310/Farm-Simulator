@@ -327,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   weapon: {fileID: 5792114660036775708}
-  walkingSoundEffect: {fileID: 0}
+  walkingSoundEffect: {fileID: 2726850888676542829}
   shotGunSFX: {fileID: 7337358972520066282}
 --- !u!114 &3791207375012473953
 MonoBehaviour:
