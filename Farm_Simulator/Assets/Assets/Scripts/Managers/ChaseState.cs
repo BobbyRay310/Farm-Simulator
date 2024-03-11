@@ -24,6 +24,6 @@ public class ChaseState : State
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 10 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 5 * Time.deltaTime);
     }
 }
